@@ -1,11 +1,5 @@
 # Degrading-Dream
 
-<aside>
-💡
-
-### Welcome to Degrading Dream!
-
-The goal is to create a stealth game set inside someone’s collapsing mind. 
 
 ### Core Mechanics and Gameplay Features:
 
@@ -22,6 +16,7 @@ The goal is to create a stealth game set inside someone’s collapsing mind.
     - The quantity of different item types can change depending on available scope.
     - Each item would have a different use or niche to fill. For example, flashlights would be self explanatory but there could be bottles to distract enemies and other items.
     - Given enough time, there could be intractable environment items such as chairs for a height boost, tables that can pushed over for cover, and more.
+
 
 ### Roadmap:
 
