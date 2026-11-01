@@ -1,0 +1,13 @@
+* [33m3059370[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/obstacle-prefab[m[33m, [m[1;31mmyfork/feature/obstacle-prefab[m[33m)[m Add peeking hitboxes to obstacle prefab
+* [33m898221f[m[33m ([m[1;32mbackup-version-2[m[33m)[m Fixed hit box
+* [33m2b4b72e[m[33m ([m[1;31mmyfork/experiment/obstacle-all-sides[m[33m, [m[1;32mexperiment/obstacle-all-sides[m[33m)[m Snapshot: obstacle prefab with all 6 side triggers
+[31m|[m * [33m6b37565[m[33m ([m[1;31morigin/camera-movement[m[33m)[m i forgot to save the scene earlier
+[31m|[m * [33m24c11d0[m temporary player and camera script
+[31m|[m * [33m5738747[m[33m ([m[1;31morigin/prototype-scene[m[33m)[m moved the scene into the scene directory in assets
+[31m|[m * [33m0f66013[m added two invisible walls on the open sides
+[31m|[m * [33m100e0b4[m updated the scene a little bit to make it more accurate to the diagram
+[31m|[m * [33mc0f6991[m created the prototype scene in unity
+[31m|[m[31m/[m  
+* [33me0793d1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Update README.md
+* [33m4b32c8a[m Update README.md
+* [33m22a93f4[m initial commit
