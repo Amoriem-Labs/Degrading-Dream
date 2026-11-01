@@ -16,32 +16,32 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    private void Start()
+    public void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         rb.drag = groundDrag;
     }
 
-    private void Update()
+    public void Update()
     {
         MyInput();
         
     }
 
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         MovePlayer();
     }
 
-    private void MyInput()
+    public void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
     }
 
-    private void MovePlayer()
+    public void MovePlayer()
     {
         moveDirection = new Vector3(horizontalInput, 0f, verticalInput);
 
