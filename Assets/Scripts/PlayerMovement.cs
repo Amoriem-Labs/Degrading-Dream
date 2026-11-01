@@ -4,50 +4,29 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement")]
-    public float moveSpeed;
+    public float moveSpeed = 50f;
 
-    public float groundDrag;
+    private Rigidbody body;
+    private Vector3 moveInput;
 
-    float horizontalInput;
-    float verticalInput;
-
-    Vector3 moveDirection;
-
-    Rigidbody rb;
-
-    public void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-        rb.drag = groundDrag;
+    void Awake() {
+        // grab this component's rigidbody object for position control
+        body = GetComponent<Rigidbody>();
     }
 
-    public void Update()
+    void Update()
     {
-        MyInput();
+        // read keyboard every frame: A/D or arrows = x, W/S or arrows = z
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
         
+        // turn our move input into a vector for physics force
+        moveInput = new Vector3(x, 0f, z).normalized;
     }
 
-    public void FixedUpdate()
+    void FixedUpdate()
     {
-        MovePlayer();
+        // adds velocity in the movement direction (* move speed scalar)
+        body.AddForce(moveInput * moveSpeed, ForceMode.Acceleration);
     }
-
-    public void MyInput()
-    {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-
-    }
-
-    public void MovePlayer()
-    {
-        moveDirection = new Vector3(horizontalInput, 0f, verticalInput);
-
-
-        rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
-    }
-
 }

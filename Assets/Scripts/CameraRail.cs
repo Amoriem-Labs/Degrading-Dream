@@ -7,8 +7,8 @@ public class CameraRail : MonoBehaviour
     // declaring objects to be used
     public Transform player;
     // minimum is the left end of the rail, max is right end
-    public float minX = -10f; 
-    public float maxX = 12f;   
+    public float minX = -5f; 
+    public float maxX = 5f;   
     public float smoothTime = 0.25f;
 
     private float velocityX;
